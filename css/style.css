@@ -1,0 +1,1831 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+.main {
+  margin-top: 5rem;
+  height: 100vh;
+  width: 85%;
+  border-radius: 50px;
+}
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  overflow: hidden;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(243, 237, 237, -0.763);
+  z-index: 10;
+}
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+}
+.nav-btn:hover {
+  background: rgb(231, 108, 14);
+}
+.swiper-button-next {
+  right: 0px;
+}
+.swiper-button-prev {
+  left: 0px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
+
+/* slider 1 */
+
+.rectangle-parent7 {
+  position: relative;
+  width: 1189px;
+  height: 687px;
+}
+.frame-div7,
+.frame-inner7 {
+  position: absolute;
+  box-sizing: border-box;
+}
+.frame-div7 {
+  top: 752px;
+  left: calc(50% - 961px);
+  border-radius: 0 0 var(--br-110xl) var(--br-110xl);
+  background-color: var(--color-gray-200);
+  width: 1921px;
+  height: 1067px;
+  display: flex;
+  flex-direction: column;
+  padding: 148px 0 0;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.frame-inner7 {
+  top: 90px;
+  left: calc(50% - 457px);
+  border-radius: var(--br-29xl);
+  border: 1px solid var(--color-black);
+  width: 914px;
+  height: 520px;
+}
+.linkedin7 {
+  font-weight: 900;
+}
+.newsletter7 {
+  font-size: 30px;
+}
+.linkedin-newsletter7 {
+  position: absolute;
+  top: 12px;
+  left: calc(50% - 481px);
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-roboto-serif);
+}
+.published-on-july7,
+.stress-the-stress7 {
+  position: absolute;
+  left: calc(50% - 20px);
+}
+.stress-the-stress7 {
+  top: 150px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-roboto-serif);
+}
+.published-on-july7 {
+  top: 200px;
+  font-weight: 900;
+  color: var(--color-chocolate);
+}
+.have-you-ever7 {
+  position: absolute;
+  top: 250px;
+  left: 575px;
+  text-align: justify;
+  display: inline-block;
+  width: 404px;
+}
+.view-the-newsletter7 {
+  position: relative;
+  text-decoration: underline;
+}
+.arrow-up-351-icon7 {
+  position: relative;
+  width: 19.77px;
+  height: 19.77px;
+}
+.view-the-newsletter-parent7 {
+  position: absolute;
+  top: 500px;
+  left: 571px;
+  border-radius: var(--br-15xl);
+  background-color: var(--color-chocolate);
+  width: 265px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  padding: 7px 10.539749145507812px 15.370012283325195px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 11px;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  scale: 1;
+  transition: 0.5s ease-in;
+}
+.view-the-newsletter-parent7:hover{
+scale: 0.9;
+transition: 0.7s ease-out;
+}
+
+.frame7,
+.frame-icon7 {
+  position: absolute;
+  left: 0;
+  width: 282px;
+  overflow: hidden;
+}
+.frame-icon7 {
+  top: 0;
+  border-radius: var(--br-5xl);
+  height: 369px;
+  object-fit: contain;
+}
+.frame7 {
+  top: 300px;
+  border-radius: 0 0 var(--br-5xl) var(--br-5xl);
+  background-color: var(--color-black);
+  height: 81px;
+}
+.the-linkedin-article7 {
+  position: relative;
+  font-weight: 900;
+}
+.arrow-up-351-svgrepo-com-1-icon17 {
+  position: relative;
+  width: 22.17px;
+  height: 22.17px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.view-the-full-version-parent7 {
+  /* width: 169.17px; */
+  height: 22.17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  font-size: var(--font-size-base);
+}
+.frame17,
+.the-linkedin-article-parent7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.the-linkedin-article-parent7 {
+  width: 217px;
+  height: 56.17px;
+  justify-content: flex-start;
+}
+.frame17 {
+  position: absolute;
+  top: 318px;
+  left: 25px;
+  width: 233px;
+  overflow: hidden;
+  justify-content: center;
+}
+.frame-parent7 {
+  position: absolute;
+  top: 150px;
+  left: 209px;
+  width: 283px;
+  height: 381px;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.rectangle-group7 {
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 594px);
+  border-radius: var(--br-29xl);
+  background-color: #E5E4E2;
+  width: 1188px;
+  height: 731px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+  display: inline-block;
+}
+
+
+
+/* slide 2 */
+.group-child1 {
+  position: absolute;
+  top: 116px;
+  left: calc(50% - 489px);
+  border-radius: var(--br-29xl);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 978px;
+  height: 474px;
+}
+.youtube {
+  font-weight: 900;
+}
+.playlist {
+  font-size: var(--font-size-21xl);
+}
+.youtube-playlist {
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 481px);
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-roboto-serif);
+}
+.posted-on-aug,
+.the-intention-behind {
+  position: absolute;
+  left: calc(50% + 46px);
+}
+.the-intention-behind {
+  top: 183px;
+  font-size: var(--font-size-9xl);
+  display: inline-block;
+  font-family: var(--font-roboto-serif);
+  width: 405px;
+}
+.posted-on-aug {
+  top: 323px;
+  font-weight: 900;
+  color: var(--color-chocolate);
+}
+.in-a-world {
+  position: absolute;
+  top: 370px;
+  left: 536px;
+  text-align: justify;
+  display: inline-block;
+  width: 404px;
+}
+.group-child2,
+.group-child3 {
+  position: absolute;
+  left: 0;
+  width: 448px;
+}
+.group-child2 {
+  top: 0;
+  border-radius: var(--br-5xl) var(--br-5xl) 0 0;
+  height: 252px;
+  object-fit: cover;
+}
+.group-child3 {
+  top: 252px;
+  border-radius: 0 0 var(--br-5xl) var(--br-5xl);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 76px;
+}
+.watch-the-full {
+  position: relative;
+  font-weight: 900;
+}
+.go-to-the {
+  position: relative;
+  text-decoration: underline;
+}
+.arrow-up-351-svgrepo-com-1-icon {
+  position: relative;
+  width: 22.17px;
+  height: 22.17px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.go-to-the-full-video-parent {
+  /* width: 169.17px; */
+  height: 22.17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  font-size: var(--font-size-base);
+}
+.watch-the-full-video-parent {
+  position: absolute;
+  top: 267px;
+  left: 24px;
+  width: 217px;
+  height: 56.17px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.group-div {
+  position: absolute;
+  top: 189px;
+  left: 37px;
+  width: 448px;
+  height: 328px;
+  font-size: var(--font-size-xl);
+}
+.well-being-series {
+  position: absolute;
+  top: 482px;
+  left: 313px;
+}
+.arrow-up-351-icon1 {
+  position: relative;
+  width: 19.77px;
+  height: 19.77px;
+}
+.go-to-playlist-parent {
+  position: absolute;
+  top: 474px;
+  left: 525px;
+  border-radius: var(--br-15xl);
+  background-color: var(--color-chocolate);
+  width: 198px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) 10.539749145507812px 15.370012283325195px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-2xs);
+  font-size: var(--font-size-xl);
+}
+.rectangle-container {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 489px);
+  width: 978px;
+  height: 590px;
+}
+.group-root {
+  position: relative;
+  border-radius: var(--br-29xl);
+  background-color: var(--color-gainsboro);
+  width: 100%;
+  height: 731px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+
+
+/* slide 3*/
+
+.twitter0 {
+  font-size: var(--font-size-29xl);
+  font-weight: 900;
+}
+.follow-me-on-container0 {
+  position: absolute;
+  top: 23px;
+  left: calc(50% - 470.5px);
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-roboto-serif);
+}
+.group-child0,
+.group-item0 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 236px);
+  border-radius: var(--br-29xl);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 472px;
+  height: 446px;
+}
+.group-item0 {
+  top: 256px;
+  left: calc(50% - 204px);
+  border-radius: var(--br-sm);
+  width: 430px;
+  height: 105px;
+}
+.dr-ravi-chatterjee0 {
+  font-weight: 900;
+}
+.drravic0 {
+  color: var(--color-darkslategray);
+}
+.aug-150 {
+  color: inherit;
+}
+.dr-ravi-chatterjee-container0 {
+  position: absolute;
+  top: 42px;
+  left: 32px;
+}
+.celebrating-freedom-within0 {
+  position: absolute;
+  top: 292px;
+  left: 144px;
+  font-size: var(--font-size-xs);
+}
+.the-essence-of0 {
+  position: absolute;
+  top: 91px;
+  left: 32px;
+  display: inline-block;
+  width: 407px;
+}
+.this-annual-milestone0,
+.youtubecom0 {
+  position: absolute;
+  top: 276px;
+  left: 144px;
+  font-size: var(--font-size-xs);
+  color: var(--color-darkslategray);
+}
+.this-annual-milestone0 {
+  top: 309px;
+  text-align: left;
+  display: inline-block;
+  width: 269px;
+}
+.group-inner0,
+.watch-the-video0 {
+  position: absolute;
+  top: 207px;
+  left: 32px;
+}
+.group-inner0 {
+  top: 50px;
+  left: 424px;
+  width: 15px;
+  height: 3px;
+}
+.comment-stroke-icon0,
+.heart-stroke-icon0 {
+  position: absolute;
+  bottom: 41px;
+  left: 231px;
+  width: 15px;
+  height: 14px;
+}
+.comment-stroke-icon0 {
+  bottom: 40.49px;
+  left: 32px;
+  height: 14.51px;
+}
+.retweet-stroke-icon0 {
+  position: absolute;
+  bottom: 42.02px;
+  left: 130px;
+  width: 17.88px;
+  height: 12.98px;
+}
+.share-stroke-icon0,
+.vector-icon0 {
+  position: absolute;
+  bottom: 40.2px;
+  left: 425px;
+  width: 15.25px;
+  height: 14.8px;
+}
+.vector-icon0 {
+  height: 3.36%;
+  width: 2.82%;
+  top: 87.44%;
+  right: 27.47%;
+  bottom: 9.19%;
+  left: 69.7%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rectangle-icon0 {
+  position: absolute;
+  top: 256px;
+  left: calc(50% - 204px);
+  border-radius: var(--br-sm) 0 0 var(--br-sm);
+  width: 104px;
+  height: 105px;
+  object-fit: cover;
+}
+.group-icon0 {
+  position: absolute;
+  top: 295px;
+  left: 70px;
+  width: 24px;
+  height: 24px;
+}
+.rectangle-parent0 {
+  position: absolute;
+  top: 116px;
+  left: calc(50% - 478.5px);
+  width: 472px;
+  height: 446px;
+  text-align: justify;
+}
+.celebrating-freedom-within10 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 218.5px);
+  font-size: var(--font-size-9xl);
+  display: inline-block;
+  font-family: var(--font-roboto-serif);
+  width: 437px;
+}
+.published-on-aug0 {
+  position: absolute;
+  top: 72px;
+  left: calc(50% - 218.5px);
+  font-weight: 900;
+  color: var(--color-chocolate);
+}
+.join-me-on0 {
+  position: absolute;
+  top: 110px;
+  left: 1px;
+  text-align: justify;
+  display: inline-block;
+  width: 404px;
+}
+.rectangle-div0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  background-color: var(--color-chocolate);
+  width: 204px;
+  height: 50px;
+}
+.go-to-twitter0 {
+  position: absolute;
+  top: 13.33px;
+  left: 23px;
+  text-decoration: underline;
+}
+.arrow-up-351-icon0 {
+  position: absolute;
+  height: 39.54%;
+  width: 9.69%;
+  top: 30.83%;
+  right: 12.62%;
+  bottom: 29.63%;
+  left: 77.68%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rectangle-group0 {
+  position: absolute;
+  top: 162px;
+  left: 0;
+  width: 204px;
+  height: 50px;
+  font-size: var(--font-size-xl);
+}
+.celebrating-freedom-within-on-parent0 {
+  position: absolute;
+  top: 233px;
+  left: calc(50% + 41.5px);
+  width: 437px;
+  height: 212px;
+}
+.follow-me-on-twitter-parent0 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 489px);
+  width: 957px;
+  height: 562px;
+}
+.group-parent0 {
+  position: relative;
+  border-radius: var(--br-29xl);
+  background-color: var(--color-gainsboro);
+  width: 100%;
+  height: 731px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+
+
+@media screen and (max-width: 980px){
+  .linkedin-newsletter7 {
+      top: 33px;
+      left: 30%;
+  }
+  }
+@media screen and (max-width: 850px){
+  .linkedin-newsletter7 {
+    top: 9px;
+    width: 90%;
+    text-align: center;
+    left: 0px;
+  }
+  }
+@media screen and (max-width: 650px){
+  .linkedin-newsletter7 {
+    top: 9px;
+    width: 90%;
+    text-align: center;
+    left: 20px;
+    font-size: 2.25em;
+  }
+  }
+@media screen and (max-width: 550px){
+  .linkedin-newsletter7 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  }
+@media screen and (max-width: 455px){
+  .linkedin-newsletter7 {
+    font-size: 1.5em;
+    width: 96%;
+    text-align: center;
+  }
+  }
+
+
+
+
+  @media screen and (max-width: 980px){
+    .stress-the-stress7{
+      width: 37%;
+    left: 52%;
+    font-size: 2em;
+    top: 158px;
+    }
+  }
+  @media screen and (max-width: 850px){
+    .stress-the-stress7{
+      width: 50%;
+      left: 47%;
+      top: 141px;
+    }
+  }
+  @media screen and (max-width: 650px){
+    .stress-the-stress7{
+      width: 75%;
+      left: 47%;
+      top: 87px;
+      font-size: 2em;
+    }
+  }
+  @media screen and (max-width: 550px){
+    .stress-the-stress7{
+      width: 75%;
+      left: 47%;
+      top: 80px;
+      font-size: 1.75em;
+    }
+  }
+  @media screen and (max-width: 455px){
+    .stress-the-stress7{  
+      top: 50px;
+      font-size: 1.55em;
+      left: 21em;
+      left: 20em;
+    }
+  }
+
+  @media screen and (max-width: 385px){
+    .frame7 {
+      left: 16em;
+    width: 5.8em;
+    height: 34px;
+    top: 14.6em;
+    
+  }
+
+}
+
+@media screen and (max-width: 450px){
+ .the-linkedin-article-parent7 .the-linkedin-article7{
+  display: none;
+  }
+}
+  @media screen and (max-width: 450px){
+    .frame7 {
+      left: 16em;
+      width: 5.8em;
+      height: 34px;
+      top: 310px;
+    
+  }
+
+}
+
+@media screen and (max-width: 385px){
+ .the-linkedin-article-parent7 .the-linkedin-article7{
+  display: none;
+  }
+}
+
+
+
+
+
+
+
+  @media screen and (max-width: 980px){
+    .published-on-july7{
+      left: 52%;
+      top: 210px;
+    }
+  }
+  @media screen and (max-width: 850px){
+    .published-on-july7{
+      left: 47%;
+      top: 178px;
+    }
+  }
+  @media screen and (max-width: 650px){
+    .published-on-july7{
+      left: 47%;
+      top: 128px;
+    }
+  }
+  @media screen and (max-width: 550px){
+    .published-on-july7{
+      left: 47%;
+      top: 113px;
+    }
+  }
+  @media screen and (max-width: 455px){
+    .published-on-july7{
+      left: 42%;
+      top: 99px;;
+    }
+  }
+  @media screen and (max-width: 385px){
+    .published-on-july7{
+      left: 42%;
+      top: 102px;
+    }
+  }
+
+
+
+  @media screen and (max-width:980px){
+    .have-you-ever7{
+      width: 37%;
+      left: 42.35%;
+      top: 246px;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width:850px){
+    .have-you-ever7{
+      width: 31%;
+      left: 41em;
+    }
+  }
+  @media screen and (max-width:650px){
+    .have-you-ever7{
+      width: 23%;
+      left: 43.45%;
+      top: 165px;
+    }
+  }
+  @media screen and (max-width:550px){
+    .have-you-ever7{
+      width: 19%;
+      top: 162px;
+      font-size: 0.8em;
+      padding: 5px 5px 5px 0px;
+      text-align: center;
+      left: 536px;
+      font-size: 0.67em;
+    }
+  }
+  @media screen and (max-width:455px){
+    .have-you-ever7{
+      width: 18%;
+      left: 485px;
+      font-size: 0.7em;
+      top: 11em;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 850px){
+    .frame-icon7{
+      left: 34%;
+      height: 282px;
+      width: 183px;
+      top: -38px;
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    .frame-icon7{
+      width: 168px;
+      left: 131px;
+    }
+  }
+  @media screen and (max-width: 550px){
+    .frame-icon7{
+      width: 116px;
+      left: 181px;
+    }
+  }
+  @media screen and (max-width: 455px){
+    .frame-icon7{
+      width: 116px;
+      top: 6em;
+      left: 16em;
+    }
+  }
+
+
+  @media screen and (max-width: 455px){
+    .view-the-newsletter7{
+      left: 4px;
+      font-size: 14px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 455px){
+    .view-the-newsletter-parent7{
+      left: 25em;
+      width: 10em;
+    }
+  }
+
+  @media screen and (max-width: 850px){
+    .view-the-newsletter7{
+      left: -1em;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  /* twitter section responsive */
+
+  @media screen and (max-width: 385px){
+    .follow-me-on-container0{
+      position: absolute;
+      left: 15em;
+      font-size: 28px;
+      color: orange;
+    }
+  }
+
+
+  @media screen and (max-width: 385px){
+    .twitter0{
+      position: absolute;
+      left: 2em;
+      top: 2em;
+      font-size: 0.7em;
+      color: orange;
+    }
+  }
+
+  @media screen and (max-width: 385px){
+    .celebrating-freedom-within10{
+      font-size: 1em;
+      left: -9em;
+      width: 12em;
+      top: 4em;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .published-on-aug0{
+      left: -10.7em;
+      font-size: 0.8em;
+      width: 14em;
+      top: 8.1em;
+  
+    }
+    
+  }
+
+
+  @media screen and (max-width :385px){
+    .group-child0{
+      width: 17em;
+      height: 12em;
+      top: -1em;
+      left: 22em;
+    }
+  }
+
+
+  @media screen and (max-width :385px){
+    .group-item0{
+      width: 17em;
+      left: 22em;
+      top: 24em;
+      
+    }
+  }
+  @media screen and (max-width :385px){
+    .celebrating-freedom-within0{
+      left: 44em;
+      top: 33em;
+      letter-spacing: -0.9px;
+    
+    }
+  }
+
+  @media screen and (max-width :385px){
+    .youtubecom0{
+      left: 35em;
+      top: 33.4em;
+    }
+  }
+
+  @media screen and (max-width :385px){
+    .this-annual-milestone0{
+      left: 48em;
+      top: 53em;
+      font-size: 8px;
+      width: 18em;
+      font-weight: 900;
+    }
+  }
+
+
+  @media screen and (max-width :385px){
+    .watch-the-video0{
+      left: 34em;
+      top: 37em;
+      font-size: 10.5px;
+    }
+  }
+  @media screen and (max-width :385px){
+    .join-me-on0{
+      left: -9em;
+      width: 13em;
+      top: 9em;
+      font-size: 16px;
+      letter-spacing: -1.6px;
+    }
+  }
+
+  @media screen and (max-width :385px){
+    .rectangle-div0{
+      left: -5em;
+      width: 6em;
+      top: 2em;
+    }
+  }
+  @media screen and (max-width :385px){
+    .go-to-twitter0{
+      left: -87px;
+      width: 7em;
+      font-size: 15px;
+      top: 3.6em;
+      
+    }
+  }
+  @media screen and (max-width :385px){
+    .the-essence-of0{
+      left: 29em;
+      width: 18em;
+      letter-spacing: -1px;
+      top: 1em;
+      font-size: 13px;
+      
+      
+    }
+  }
+
+  @media screen and (max-width: 385px){
+    .dr-ravi-chatterjee0{
+      position: absolute;
+      left: 31.5em;
+      font-size: 11px;
+      top: -4em;
+      width: 10em;
+      color: orange;
+    }
+  }
+
+  @media screen and (max-width: 385px){
+    .drravic0{
+      position: absolute;
+      left: 41.2em;
+      font-size: 11px;
+      top: -4em;
+      width: 10em;
+    }
+  }
+  @media screen and (max-width: 385px){
+    .aug-150{
+      position: absolute;
+      left: 47.2em;
+      font-size: 11px;
+      top: -4em;
+      width: 10em;
+    }
+  }
+/* 
+
+
+twitter width-450px */
+
+
+@media screen and (max-width: 450px){
+  .follow-me-on-container0{
+    position: absolute;
+    left: 15em;
+    font-size: 28px;
+    color: orange;
+  }
+}
+
+
+@media screen and (max-width: 450px){
+  .twitter0{
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    font-size: 0.7em;
+    color: orange;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .celebrating-freedom-within10{
+    font-size: 1em;
+    left: -9em;
+    width: 12em;
+    top: 4em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .published-on-aug0{
+    left: -10.7em;
+    font-size: 0.8em;
+    width: 14em;
+    top: 8.1em;
+
+  }
+  
+}
+
+
+@media screen and (max-width :450px){
+  .group-child0{
+    width: 17em;
+    height: 12em;
+    top: -1em;
+    left: 22em;
+  }
+}
+
+
+@media screen and (max-width :450px){
+  .group-item0{
+    width: 17em;
+    left: 22em;
+    top: 24em;
+    
+  }
+}
+@media screen and (max-width :450px){
+  .celebrating-freedom-within0{
+    left: 44em;
+    top: 33em;
+    letter-spacing: -0.9px;
+  
+  }
+}
+
+@media screen and (max-width :450px){
+  .youtubecom0{
+    left: 35em;
+    top: 33.4em;
+  }
+}
+
+@media screen and (max-width :450px){
+  .this-annual-milestone0{
+    left: 48em;
+    top: 53em;
+    font-size: 8px;
+    width: 18em;
+    font-weight: 900;
+  }
+}
+
+
+@media screen and (max-width :385px){
+  .watch-the-video0{
+    left: 34em;
+    top: 37em;
+    font-size: 10.5px;
+  }
+}
+@media screen and (max-width :450px){
+  .join-me-on0{
+    left: -9em;
+    width: 13em;
+    top: 9em;
+    font-size: 16px;
+    letter-spacing: -1.6px;
+  }
+}
+
+@media screen and (max-width :450px){
+  .rectangle-div0{
+    left: -5em;
+    width: 6em;
+    top: 2em;
+  }
+}
+@media screen and (max-width :450px){
+  .go-to-twitter0{
+    left: -87px;
+    width: 7em;
+    font-size: 15px;
+    top: 3.6em;
+    
+  }
+}
+@media screen and (max-width :450px){
+  .the-essence-of0{
+    left: 29em;
+    width: 18em;
+    letter-spacing: -1px;
+    top: 1em;
+    font-size: 13px;
+    
+    
+  }
+}
+
+@media screen and (max-width: 450px){
+  .dr-ravi-chatterjee0{
+    position: absolute;
+    left: 31.5em;
+    font-size: 11px;
+    top: -4em;
+    width: 10em;
+    color: orange;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .drravic0{
+    position: absolute;
+    left: 41.2em;
+    font-size: 11px;
+    top: -4em;
+    width: 10em;
+  }
+}
+@media screen and (max-width: 450px){
+  .aug-150{
+    position: absolute;
+    left: 47.2em;
+    font-size: 11px;
+    top: -4em;
+    width: 10em;
+  }
+}
+
+/* twitterr width-850 */
+
+
+
+@media screen and (max-width: 850px){
+  .follow-me-on-container0{
+    position: absolute;
+    left: 15em;
+    font-size: 28px;
+    color: orange;
+  }
+}
+
+
+@media screen and (max-width: 850px){
+  .twitter0{
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    font-size: 0.7em;
+    color: orange;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .celebrating-freedom-within10{
+    font-size: 1em;
+    left: -9em;
+    width: 12em;
+    top: 4em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .published-on-aug0{
+    left: -145px;
+    font-size: 0.8em;
+    width: 14em;
+    top: 125px;
+
+  }
+  
+}
+
+
+@media screen and (max-width :850px){
+  .group-child0{
+    width: 17em;
+    height: 12em;
+    top: -1em;
+    left: 22em;
+  }
+}
+
+
+@media screen and (max-width :850px){
+  .group-item0{
+    width: 17em;
+    left: 22em;
+    top: 24em;
+    
+  }
+}
+@media screen and (max-width :850px){
+  .celebrating-freedom-within0{
+    left: 44em;
+    top: 33em;
+    letter-spacing: -0.9px;
+  
+  }
+}
+
+@media screen and (max-width :850px){
+  .youtubecom0{
+    left: 35em;
+    top: 33.4em;
+  }
+}
+
+@media screen and (max-width :850px){
+  .this-annual-milestone0{
+    left: 48em;
+    top: 53em;
+    font-size: 8px;
+    width: 18em;
+    font-weight: 900;
+  }
+}
+
+
+@media screen and (max-width :850px){
+  .watch-the-video0{
+    left: 34em;
+    top: 37em;
+    font-size: 10.5px;
+  }
+}
+@media screen and (max-width :850px){
+  .join-me-on0{
+    left: -9em;
+    width: 13em;
+    top: 9em;
+    font-size: 16px;
+    letter-spacing: -1.6px;
+  }
+}
+
+@media screen and (max-width :850px){
+  .rectangle-div0{
+    left: -5em;
+    width: 6em;
+    top: 2em;
+  }
+}
+@media screen and (max-width :850px){
+  .go-to-twitter0{
+    left: -87px;
+    width: 7em;
+    font-size: 15px;
+    top: 3.6em;
+    
+  }
+}
+@media screen and (max-width :850px){
+  .the-essence-of0{
+    left: 29em;
+    width: 18em;
+    letter-spacing: -1px;
+    top: 1em;
+    font-size: 13px;
+    
+    
+  }
+}
+
+@media screen and (max-width: 850px){
+  .dr-ravi-chatterjee0{
+    position: absolute;
+    left: 31.5em;
+    font-size: 11px;
+    top: -4em;
+    width: 10em;
+    color: orange;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .drravic0{
+    position: absolute;
+    left: 41.2em;
+    font-size: 11px;
+    top: -4em;
+    width: 10em;
+  }
+}
+@media screen and (max-width: 850px){
+  .aug-150{
+    position: absolute;
+    left: 47.2em;
+    font-size: 11px;
+    top: -4em;
+    width: 10em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* youtube playlist */
+
+    @media screen and (max-width :385px){
+      .youtube-playlist{
+        left: 23em;
+        font-size: 20px;
+      }
+    }
+    @media screen and (max-width :385px){
+      .youtube-playlist .playlist{
+        position: absolute;
+        top: 1.5em;
+        left: -1.8em;
+        font-size: 31px;
+      }
+    }
+    @media screen and (max-width :385px){
+      .youtube-playlist .youtube{
+        position: absolute;
+        color: red;
+        top: 0em;
+        left: -2em;
+        font-size: 31px;
+      }
+    }
+
+    @media screen and (max-width :385px){
+      .group-div{
+        left: 7em;
+       
+      }
+    }
+    @media screen and (max-width :385px){
+      .group-div .group-child2{
+        width: 250px;
+        height: 100px;
+        left: 10em;
+        background-size: cover;
+        object-fit: cover;
+        background-position:  right;
+        top: -3.5em;
+        left: 11em;
+       
+      }
+    }
+
+    @media screen and (max-width :385px){
+      .group-div .group-child3{
+        left: 11em;
+        width: 250px;
+        height: 50px;
+        top: 1.5em;
+      }
+    }
+
+    @media screen and (max-width :385px){
+      .watch-the-full-video-parent{
+        left: 18em;
+        top: 2.3em;
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 385px){
+      .well-being-series{
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 385px){
+      .the-intention-behind{
+        left: 19em;
+        font-size: 18.5px;
+        top: 15em;
+        width: 16em;
+      }
+    }
+
+    @media screen and (max-width: 385px){
+      .posted-on-aug{
+        left: 24.3em;
+        top: 23.4em;
+        font-size: 0.9em;
+      }
+    }
+
+    @media screen and (max-width: 385px){
+      .in-a-world{
+        left: 23.9em;
+        font-size: 15px;
+        width: 18em;
+      }
+    }
+
+    @media screen and (max-width: 385px){
+      .go-to-playlist-parent{
+        left: 19em;
+        top: 25em;
+      }
+    }
+    @media screen and (max-width: 385px){
+      .go-to-playlist-parent .go-to-the{
+       top: 0.1em;
+        
+      }
+    }
+
+
+    /* youtube playlist max-width: 450px */
+
+
+
+    @media screen and (max-width :450px){
+      .youtube-playlist{
+        left: 23em;
+        font-size: 20px;
+      }
+    }
+    @media screen and (max-width :450px){
+      .youtube-playlist .playlist{
+        position: absolute;
+        top: 1.5em;
+        left: -1.8em;
+        font-size: 31px;
+      }
+    }
+    @media screen and (max-width :450px){
+      .youtube-playlist .youtube{
+        position: absolute;
+        color: red;
+        top: 0em;
+        left: -2em;
+        font-size: 31px;
+      }
+    }
+
+    @media screen and (max-width :450px){
+      .group-div{
+        left: 7em;
+       
+      }
+    }
+    @media screen and (max-width :450px){
+      .group-div .group-child2{
+        width: 250px;
+        height: 100px;
+        left: 10em;
+        background-size: cover;
+        object-fit: cover;
+        background-position:  right;
+        top: -3.1em;
+        left: 11em;
+       
+      }
+    }
+
+    @media screen and (max-width :450px){
+      .group-div .group-child3{
+        left: 11em;
+        width: 250px;
+        height: 50px;
+        top: 1.9em;
+      }
+    }
+
+    @media screen and (max-width : 450px){
+      .watch-the-full-video-parent{
+        left: 18em;
+        top: 2.7em;
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 450px){
+      .well-being-series{
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 450px){
+      .the-intention-behind{
+        left: 19em;
+        font-size: 18.5px;
+        top: 16em;
+        width: 16em;
+      }
+    }
+
+    @media screen and (max-width: 450px){
+      .posted-on-aug{
+        left: 24.3em;
+        top: 25em;
+        font-size: 0.9em;
+      }
+    }
+
+    @media screen and (max-width: 450px){
+      .in-a-world{
+        left: 23.9em;
+        font-size: 15px;
+        width: 18em;
+        top: 26em;
+      }
+    }
+
+    @media screen and (max-width: 450px){
+      .go-to-playlist-parent{
+        left: 19em;
+        top: 26em;
+      }
+    }
+    @media screen and (max-width: 450px){
+      .go-to-playlist-parent .go-to-the{
+       top: 0.1em;
+        
+      }
+    }
+  
+
+
+
+    /* youtube playlist max-width  850px */
+
+    @media screen and (max-width :850px){
+      .youtube-playlist{
+        left: 23em;
+        font-size: 20px;
+      }
+    }
+    @media screen and (max-width :850px){
+      .youtube-playlist .playlist{
+        position: absolute;
+        top: 1.5em;
+        left: -1.8em;
+        font-size: 31px;
+      }
+    }
+    @media screen and (max-width :850px){
+      .youtube-playlist .youtube{
+        position: absolute;
+        color: red;
+        top: 0em;
+        left: -2em;
+        font-size: 31px;
+      }
+    }
+
+    @media screen and (max-width :850px){
+      .group-div{
+        left: 7em;
+       
+      }
+    }
+    @media screen and (max-width :850px){
+      .group-div .group-child2{
+        width: 250px;
+        height: 100px;
+        left: 10em;
+        background-size: cover;
+        object-fit: cover;
+        background-position:  right;
+        top: -3.1em;
+        left: 11em;
+       
+      }
+    }
+
+    @media screen and (max-width :850px){
+      .group-div .group-child3{
+        left: 11em;
+        width: 250px;
+        height: 50px;
+        top: 1.9em;
+      }
+    }
+
+    @media screen and (max-width : 850px){
+      .watch-the-full-video-parent{
+        left: 18em;
+        top: 2.7em;
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 850px){
+      .well-being-series{
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 850px){
+      .the-intention-behind{
+        left: 19em;
+        font-size: 18.5px;
+        top: 16em;
+        width: 16em;
+      }
+    }
+
+    @media screen and (max-width: 850px){
+      .posted-on-aug{
+        left: 24.3em;
+        top: 25em;
+        font-size: 0.9em;
+      }
+    }
+
+    @media screen and (max-width: 850px){
+      .in-a-world{
+        left: 23.9em;
+        font-size: 15px;
+        width: 18em;
+        top: 26em;
+      }
+    }
+
+    @media screen and (max-width: 850px){
+      .go-to-playlist-parent{
+        left: 19em;
+        top: 26em;
+      }
+    }
+    @media screen and (max-width: 850px){
+      .go-to-playlist-parent .go-to-the{
+       top: 0.1em;
+        
+      }
+    }
+  
+
+
+
+
